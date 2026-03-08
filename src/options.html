@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Summary Plugin Options</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; padding: 20px; background-color: #121212; color: #e0e0e0; }
+    .container { max-width: 500px; margin: auto; }
+    h1 { color: #81c784; font-size: 20px; }
+    .field { margin-bottom: 20px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 14px; }
+    input, select { width: 100%; padding: 8px; box-sizing: border-box; background: #1e1e1e; border: 1px solid #333; color: #e0e0e0; border-radius: 4px; }
+    button { padding: 10px 20px; cursor: pointer; background-color: #2e7d32; color: white; border: none; border-radius: 4px; font-weight: bold; margin-top: 10px; }
+    button:hover { background-color: #388e3c; }
+    .status { margin-top: 10px; color: #81c784; font-size: 14px; min-height: 1em; }
+    .hint { font-size: 12px; color: #888; margin-top: 5px; }
+    a { color: #64b5f6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Settings</h1>
+    
+    <div class="field">
+      <label for="apiKey">OpenAI API Key:</label>
+      <input type="password" id="apiKey" placeholder="sk-...">
+      <div class="hint">Get your key from <a href="https://platform.openai.com/api-keys" target="_blank">OpenAI Dashboard</a></div>
+    </div>
+
+    <div class="field">
+      <label for="voiceSelect">Preferred Voice:</label>
+      <div style="display: flex; gap: 10px;">
+        <select id="voiceSelect" style="flex: 1;">
+          <option value="">Loading voices...</option>
+        </select>
+        <button id="testVoice" style="margin-top: 0; padding: 8px 15px; background-color: #1565c0;">Test</button>
+      </div>
+      <div class="hint">Default is Google US English (en-US) if available.</div>
+    </div>
+
+    <button id="save">Save Settings</button>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
