@@ -1,4 +1,4 @@
-# Audio Summary Plugin
+# <img src="src/icon128.png" width="48" height="48" align="center"> Audio Summary Plugin
 
 A modern Google Chrome extension that leverages OpenAI's GPT-4o to provide concise or detailed summaries of any webpage, with integrated Text-to-Speech (TTS) for hands-free consumption.
 

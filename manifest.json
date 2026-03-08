@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Audio Summary Plugin",
-  "version": "1.5",
+  "version": "1.8",
   "description": "Summarizes and reads aloud the current page using ChatGPT API",
   "permissions": [
     "activeTab",
@@ -17,13 +17,18 @@
   },
   "action": {
     "default_popup": "src/popup.html",
-    "default_icon": "icon_v2.svg"
+    "default_icon": {
+      "16": "src/icon16.png",
+      "32": "src/icon32.png",
+      "48": "src/icon48.png",
+      "128": "src/icon128.png"
+    }
   },
   "options_page": "src/options.html",
   "icons": {
-    "16": "icon_v2.svg",
-    "32": "icon_v2.svg",
-    "48": "icon_v2.svg",
-    "128": "icon_v2.svg"
+    "16": "src/icon16.png",
+    "32": "src/icon32.png",
+    "48": "src/icon48.png",
+    "128": "src/icon128.png"
   }
 }
